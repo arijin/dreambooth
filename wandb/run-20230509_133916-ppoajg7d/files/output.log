@@ -1,0 +1,143 @@
+05/09/2023 13:39:22 - INFO - __main__ - ***** Running training *****
+05/09/2023 13:39:22 - INFO - __main__ -   Num examples = 4
+05/09/2023 13:39:22 - INFO - __main__ -   Num batches each epoch = 4
+05/09/2023 13:39:22 - INFO - __main__ -   Num Epochs = 125
+05/09/2023 13:39:22 - INFO - __main__ -   Instantaneous batch size per device = 1
+05/09/2023 13:39:22 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 1
+05/09/2023 13:39:22 - INFO - __main__ -   Gradient Accumulation steps = 1
+05/09/2023 13:39:22 - INFO - __main__ -   Total optimization steps = 500
+
+Steps:   1%|▍                                                    | 4/500 [00:04<06:55,  1.19it/s, loss=0.174, lr=0.0001]05/09/2023 13:39:26 - INFO - __main__ - Running validation...
+ Generating 4 images with prompt: A photo of cartoon man in a house.
+{'dynamic_thresholding_ratio', 'clip_sample_range', 'sample_max_value', 'thresholding'} was not found in config. Values will be initialized to default values.
+/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/transformers/models/clip/feature_extraction_clip.py:28: FutureWarning: The class CLIPFeatureExtractor is deprecated and will be removed in version 5 of Transformers. Please use CLIPImageProcessor instead.
+  warnings.warn(
+{'scaling_factor'} was not found in config. Values will be initialized to default values.
+{'solver_type', 'use_karras_sigmas', 'solver_order', 'lower_order_final', 'algorithm_type'} was not found in config. Values will be initialized to default values.
+
+
+
+
+
+Steps:   5%|██▌                                                 | 25/500 [00:48<04:40,  1.69it/s, loss=0.139, lr=0.0001]Traceback (most recent call last):
+  File "train_dreambooth_lora.py", line 1093, in <module>
+    main(args)
+  File "train_dreambooth_lora.py", line 923, in main
+    model_pred = unet(noisy_latents, timesteps, encoder_hidden_states).sample
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jinyujie/spirit/diffusers/src/diffusers/models/unet_2d_condition.py", line 773, in forward
+    sample = upsample_block(
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jinyujie/spirit/diffusers/src/diffusers/models/unet_2d_blocks.py", line 1860, in forward
+    hidden_states = attn(
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jinyujie/spirit/diffusers/src/diffusers/models/transformer_2d.py", line 265, in forward
+    hidden_states = block(
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jinyujie/spirit/diffusers/src/diffusers/models/attention.py", line 315, in forward
+    attn_output = self.attn1(
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jinyujie/spirit/diffusers/src/diffusers/models/attention_processor.py", line 268, in forward
+    return self.processor(
+  File "/home/jinyujie/spirit/diffusers/src/diffusers/models/attention_processor.py", line 480, in __call__
+    hidden_states = attn.to_out[0](hidden_states) + scale * self.to_out_lora(hidden_states)
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jinyujie/spirit/diffusers/src/diffusers/models/attention_processor.py", line 437, in forward
+    up_hidden_states = self.up(down_hidden_states)
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/console.py", line 1698, in print
+    extend(render(renderable, render_options))
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/console.py", line 1334, in render
+    yield from self.render(render_output, _options)
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/console.py", line 1330, in render
+    for render_output in iter_render:
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/constrain.py", line 29, in __rich_console__
+    yield from console.render(self.renderable, child_options)
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/console.py", line 1330, in render
+    for render_output in iter_render:
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/panel.py", line 220, in __rich_console__
+    lines = console.render_lines(renderable, child_options, style=style)
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/console.py", line 1370, in render_lines
+    lines = list(
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/segment.py", line 292, in split_and_crop_lines
+    for segment in segments:
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/console.py", line 1330, in render
+    for render_output in iter_render:
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/padding.py", line 97, in __rich_console__
+    lines = console.render_lines(
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/console.py", line 1370, in render_lines
+    lines = list(
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/segment.py", line 292, in split_and_crop_lines
+    for segment in segments:
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/console.py", line 1334, in render
+    yield from self.render(render_output, _options)
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/console.py", line 1330, in render
+    for render_output in iter_render:
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/syntax.py", line 612, in __rich_console__
+    segments = Segments(self._get_syntax(console, options))
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/segment.py", line 668, in __init__
+    self.segments = list(segments)
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/syntax.py", line 640, in _get_syntax
+    text = self.highlight(processed_code, self.line_range)
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/syntax.py", line 512, in highlight
+    text.append_tokens(tokens_to_spans())
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/text.py", line 991, in append_tokens
+    for content, style in tokens:
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/syntax.py", line 498, in tokens_to_spans
+    _token_type, token = next(tokens)
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/rich/syntax.py", line 484, in line_tokenize
+    for token_type, token in lexer.get_tokens(code):
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/pygments/lexer.py", line 191, in streamer
+    for _, t, v in self.get_tokens_unprocessed(text):
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/pygments/lexer.py", line 633, in get_tokens_unprocessed
+    m = rexmatch(text, pos)
+KeyboardInterrupt
+Original exception was:
+Traceback (most recent call last):
+  File "train_dreambooth_lora.py", line 1093, in <module>
+    main(args)
+  File "train_dreambooth_lora.py", line 923, in main
+    model_pred = unet(noisy_latents, timesteps, encoder_hidden_states).sample
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jinyujie/spirit/diffusers/src/diffusers/models/unet_2d_condition.py", line 773, in forward
+    sample = upsample_block(
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jinyujie/spirit/diffusers/src/diffusers/models/unet_2d_blocks.py", line 1860, in forward
+    hidden_states = attn(
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jinyujie/spirit/diffusers/src/diffusers/models/transformer_2d.py", line 265, in forward
+    hidden_states = block(
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jinyujie/spirit/diffusers/src/diffusers/models/attention.py", line 315, in forward
+    attn_output = self.attn1(
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jinyujie/spirit/diffusers/src/diffusers/models/attention_processor.py", line 268, in forward
+    return self.processor(
+  File "/home/jinyujie/spirit/diffusers/src/diffusers/models/attention_processor.py", line 480, in __call__
+    hidden_states = attn.to_out[0](hidden_states) + scale * self.to_out_lora(hidden_states)
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jinyujie/spirit/diffusers/src/diffusers/models/attention_processor.py", line 437, in forward
+    up_hidden_states = self.up(down_hidden_states)
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt

@@ -1,0 +1,222 @@
+04/11/2023 17:22:18 - INFO - __main__ - ***** Running training *****
+04/11/2023 17:22:18 - INFO - __main__ -   Num examples = 4
+04/11/2023 17:22:18 - INFO - __main__ -   Num batches each epoch = 4
+04/11/2023 17:22:18 - INFO - __main__ -   Num Epochs = 125
+04/11/2023 17:22:18 - INFO - __main__ -   Instantaneous batch size per device = 1
+04/11/2023 17:22:18 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 1
+04/11/2023 17:22:18 - INFO - __main__ -   Gradient Accumulation steps = 1
+04/11/2023 17:22:18 - INFO - __main__ -   Total optimization steps = 500
+
+Steps:   1%|█▏                                                                                                                                                         | 4/500 [00:05<08:00,  1.03it/s, loss=0.174, lr=0.0001]04/11/2023 17:22:23 - INFO - __main__ - Running validation...
+ Generating 4 images with prompt: A photo of cartoon man in a house.
+/home/jinyujie/anaconda3/envs/visgpt/lib/python3.8/site-packages/transformers/models/clip/feature_extraction_clip.py:28: FutureWarning: The class CLIPFeatureExtractor is deprecated and will be removed in version 5 of Transformers. Please use CLIPImageProcessor instead.
+  warnings.warn(
+{'sample_max_value', 'clip_sample_range', 'dynamic_thresholding_ratio', 'thresholding'} was not found in config. Values will be initialized to default values.
+{'scaling_factor'} was not found in config. Values will be initialized to default values.
+{'solver_order', 'solver_type', 'algorithm_type', 'lower_order_final'} was not found in config. Values will be initialized to default values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steps:  20%|██████████████████████████████▍                                                                                                                         | 100/500 [01:35<03:57,  1.69it/s, loss=0.0768, lr=0.0001]04/11/2023 17:23:53 - INFO - accelerate.accelerator - Saving current state to ./work_dirs/people_1/output_dir/checkpoint-100
+04/11/2023 17:23:53 - INFO - accelerate.checkpointing - Model weights saved in ./work_dirs/people_1/output_dir/checkpoint-100/pytorch_model.bin
+04/11/2023 17:23:53 - INFO - accelerate.checkpointing - Optimizer state saved in ./work_dirs/people_1/output_dir/checkpoint-100/optimizer.bin
+04/11/2023 17:23:53 - INFO - accelerate.checkpointing - Scheduler state saved in ./work_dirs/people_1/output_dir/checkpoint-100/scheduler.bin
+04/11/2023 17:23:53 - INFO - accelerate.checkpointing - Random states saved in ./work_dirs/people_1/output_dir/checkpoint-100/random_states_0.pkl
+04/11/2023 17:23:53 - INFO - accelerate.checkpointing - Saving the state of AttnProcsLayers to work_dirs/people_1/output_dir/checkpoint-100/custom_checkpoint_0.pkl
+04/11/2023 17:23:53 - INFO - __main__ - Saved state to ./work_dirs/people_1/output_dir/checkpoint-100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steps:  40%|████████████████████████████████████████████████████████████▊                                                                                           | 200/500 [02:35<02:59,  1.67it/s, loss=0.0755, lr=0.0001]04/11/2023 17:24:53 - INFO - accelerate.accelerator - Saving current state to ./work_dirs/people_1/output_dir/checkpoint-200
+04/11/2023 17:24:54 - INFO - accelerate.checkpointing - Model weights saved in ./work_dirs/people_1/output_dir/checkpoint-200/pytorch_model.bin
+04/11/2023 17:24:54 - INFO - accelerate.checkpointing - Optimizer state saved in ./work_dirs/people_1/output_dir/checkpoint-200/optimizer.bin
+04/11/2023 17:24:54 - INFO - accelerate.checkpointing - Scheduler state saved in ./work_dirs/people_1/output_dir/checkpoint-200/scheduler.bin
+04/11/2023 17:24:54 - INFO - accelerate.checkpointing - Random states saved in ./work_dirs/people_1/output_dir/checkpoint-200/random_states_0.pkl
+04/11/2023 17:24:54 - INFO - accelerate.checkpointing - Saving the state of AttnProcsLayers to work_dirs/people_1/output_dir/checkpoint-200/custom_checkpoint_0.pkl
+04/11/2023 17:24:54 - INFO - __main__ - Saved state to ./work_dirs/people_1/output_dir/checkpoint-200
+Steps:  41%|██████████████████████████████████████████████████████████████                                                                                          | 204/500 [02:38<02:59,  1.65it/s, loss=0.0701, lr=0.0001]04/11/2023 17:24:56 - INFO - __main__ - Running validation...
+ Generating 4 images with prompt: A photo of cartoon man in a house.
+{'sample_max_value', 'clip_sample_range', 'dynamic_thresholding_ratio', 'thresholding'} was not found in config. Values will be initialized to default values.
+{'scaling_factor'} was not found in config. Values will be initialized to default values.
+{'solver_order', 'solver_type', 'algorithm_type', 'lower_order_final'} was not found in config. Values will be initialized to default values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steps:  60%|█████████████████████████████████████████████████████████████████████████████████████████████                                                              | 300/500 [04:09<01:59,  1.68it/s, loss=0.2, lr=0.0001]04/11/2023 17:26:27 - INFO - accelerate.accelerator - Saving current state to ./work_dirs/people_1/output_dir/checkpoint-300
+04/11/2023 17:26:27 - INFO - accelerate.checkpointing - Model weights saved in ./work_dirs/people_1/output_dir/checkpoint-300/pytorch_model.bin
+04/11/2023 17:26:27 - INFO - accelerate.checkpointing - Optimizer state saved in ./work_dirs/people_1/output_dir/checkpoint-300/optimizer.bin
+04/11/2023 17:26:27 - INFO - accelerate.checkpointing - Scheduler state saved in ./work_dirs/people_1/output_dir/checkpoint-300/scheduler.bin
+04/11/2023 17:26:27 - INFO - accelerate.checkpointing - Random states saved in ./work_dirs/people_1/output_dir/checkpoint-300/random_states_0.pkl
+04/11/2023 17:26:27 - INFO - accelerate.checkpointing - Saving the state of AttnProcsLayers to work_dirs/people_1/output_dir/checkpoint-300/custom_checkpoint_0.pkl
+04/11/2023 17:26:27 - INFO - __main__ - Saved state to ./work_dirs/people_1/output_dir/checkpoint-300
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steps:  80%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                              | 400/500 [05:09<00:59,  1.68it/s, loss=0.0978, lr=0.0001]04/11/2023 17:27:27 - INFO - accelerate.accelerator - Saving current state to ./work_dirs/people_1/output_dir/checkpoint-400
+04/11/2023 17:27:27 - INFO - accelerate.checkpointing - Model weights saved in ./work_dirs/people_1/output_dir/checkpoint-400/pytorch_model.bin
+04/11/2023 17:27:27 - INFO - accelerate.checkpointing - Optimizer state saved in ./work_dirs/people_1/output_dir/checkpoint-400/optimizer.bin
+04/11/2023 17:27:27 - INFO - accelerate.checkpointing - Scheduler state saved in ./work_dirs/people_1/output_dir/checkpoint-400/scheduler.bin
+04/11/2023 17:27:27 - INFO - accelerate.checkpointing - Random states saved in ./work_dirs/people_1/output_dir/checkpoint-400/random_states_0.pkl
+04/11/2023 17:27:27 - INFO - accelerate.checkpointing - Saving the state of AttnProcsLayers to work_dirs/people_1/output_dir/checkpoint-400/custom_checkpoint_0.pkl
+04/11/2023 17:27:27 - INFO - __main__ - Saved state to ./work_dirs/people_1/output_dir/checkpoint-400
+Steps:  81%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                             | 404/500 [05:11<00:58,  1.65it/s, loss=0.0567, lr=0.0001]04/11/2023 17:27:29 - INFO - __main__ - Running validation...
+ Generating 4 images with prompt: A photo of cartoon man in a house.
+{'sample_max_value', 'clip_sample_range', 'dynamic_thresholding_ratio', 'thresholding'} was not found in config. Values will be initialized to default values.
+{'scaling_factor'} was not found in config. Values will be initialized to default values.
+{'solver_order', 'solver_type', 'algorithm_type', 'lower_order_final'} was not found in config. Values will be initialized to default values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steps: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 500/500 [06:42<00:00,  1.68it/s, loss=0.0824, lr=0.0001]04/11/2023 17:29:00 - INFO - accelerate.accelerator - Saving current state to ./work_dirs/people_1/output_dir/checkpoint-500
+04/11/2023 17:29:00 - INFO - accelerate.checkpointing - Model weights saved in ./work_dirs/people_1/output_dir/checkpoint-500/pytorch_model.bin
+04/11/2023 17:29:00 - INFO - accelerate.checkpointing - Optimizer state saved in ./work_dirs/people_1/output_dir/checkpoint-500/optimizer.bin
+04/11/2023 17:29:00 - INFO - accelerate.checkpointing - Scheduler state saved in ./work_dirs/people_1/output_dir/checkpoint-500/scheduler.bin
+04/11/2023 17:29:00 - INFO - accelerate.checkpointing - Random states saved in ./work_dirs/people_1/output_dir/checkpoint-500/random_states_0.pkl
+04/11/2023 17:29:00 - INFO - accelerate.checkpointing - Saving the state of AttnProcsLayers to work_dirs/people_1/output_dir/checkpoint-500/custom_checkpoint_0.pkl
+04/11/2023 17:29:00 - INFO - __main__ - Saved state to ./work_dirs/people_1/output_dir/checkpoint-500
+Steps: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 500/500 [06:42<00:00,  1.68it/s, loss=0.126, lr=0.0001]Model weights saved in ./work_dirs/people_1/output_dir/pytorch_lora_weights.bin
+{'resnet_out_scale_factor', 'conv_out_kernel', 'timestep_post_act', 'class_embeddings_concat', 'time_cond_proj_dim', 'mid_block_type', 'time_embedding_type', 'resnet_skip_time_act', 'projection_class_embeddings_input_dim', 'encoder_hid_dim', 'resnet_time_scale_shift', 'conv_in_kernel', 'class_embed_type'} was not found in config. Values will be initialized to default values.
+{'sample_max_value', 'clip_sample_range', 'dynamic_thresholding_ratio', 'thresholding'} was not found in config. Values will be initialized to default values.
+{'scaling_factor'} was not found in config. Values will be initialized to default values.
+{'solver_order', 'solver_type', 'algorithm_type', 'lower_order_final'} was not found in config. Values will be initialized to default values.
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:07<00:00,  3.30it/s]
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:07<00:00,  3.30it/s]
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:07<00:00,  3.30it/s]
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:07<00:00,  3.29it/s]

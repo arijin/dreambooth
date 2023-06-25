@@ -1,0 +1,300 @@
+2023-05-09 13:39:16,577 INFO    StreamThr :1819753 [internal.py:wandb_internal():86] W&B internal server running at pid: 1819753, started at: 2023-05-09 13:39:16.576350
+2023-05-09 13:39:16,580 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: status
+2023-05-09 13:39:16,584 INFO    WriterThread:1819753 [datastore.py:open_for_write():85] open: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/run-ppoajg7d.wandb
+2023-05-09 13:39:16,585 DEBUG   SenderThread:1819753 [sender.py:send():375] send: header
+2023-05-09 13:39:16,672 DEBUG   SenderThread:1819753 [sender.py:send():375] send: run
+2023-05-09 13:39:17,350 INFO    SenderThread:1819753 [dir_watcher.py:__init__():219] watching files in: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files
+2023-05-09 13:39:17,350 INFO    SenderThread:1819753 [sender.py:_start_run_threads():1124] run started: ppoajg7d with start time 1683610756.572908
+2023-05-09 13:39:17,350 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:39:17,350 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:39:17,352 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: check_version
+2023-05-09 13:39:17,353 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: check_version
+2023-05-09 13:39:17,864 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: run_start
+2023-05-09 13:39:17,870 DEBUG   HandlerThread:1819753 [system_info.py:__init__():31] System info init
+2023-05-09 13:39:17,870 DEBUG   HandlerThread:1819753 [system_info.py:__init__():46] System info init done
+2023-05-09 13:39:17,870 INFO    HandlerThread:1819753 [system_monitor.py:start():181] Starting system monitor
+2023-05-09 13:39:17,870 INFO    SystemMonitor:1819753 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-09 13:39:17,870 INFO    HandlerThread:1819753 [system_monitor.py:probe():201] Collecting system info
+2023-05-09 13:39:17,872 INFO    SystemMonitor:1819753 [interfaces.py:start():190] Started cpu monitoring
+2023-05-09 13:39:17,873 INFO    SystemMonitor:1819753 [interfaces.py:start():190] Started disk monitoring
+2023-05-09 13:39:17,875 INFO    SystemMonitor:1819753 [interfaces.py:start():190] Started gpu monitoring
+2023-05-09 13:39:17,877 INFO    SystemMonitor:1819753 [interfaces.py:start():190] Started memory monitoring
+2023-05-09 13:39:17,882 INFO    SystemMonitor:1819753 [interfaces.py:start():190] Started network monitoring
+2023-05-09 13:39:17,971 DEBUG   HandlerThread:1819753 [system_info.py:probe():195] Probing system
+2023-05-09 13:39:17,979 DEBUG   HandlerThread:1819753 [system_info.py:_probe_git():180] Probing git
+2023-05-09 13:39:17,998 DEBUG   HandlerThread:1819753 [system_info.py:_probe_git():188] Probing git done
+2023-05-09 13:39:17,998 DEBUG   HandlerThread:1819753 [system_info.py:probe():240] Probing system done
+2023-05-09 13:39:17,998 DEBUG   HandlerThread:1819753 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-46-generic-x86_64-with-glibc2.17', 'python': '3.8.16', 'heartbeatAt': '2023-05-09T05:39:17.971356', 'startedAt': '2023-05-09T05:39:16.562847', 'docker': None, 'cuda': None, 'args': ('--pretrained_model_name_or_path=/home/jinyujie/.cache/huggingface/hub/models--stabilityai--stable-diffusion-2-1/snapshots/36a01dc742066de2e8c91e7cf0b8f6b53ef53da1', '--instance_data_dir=./work_dirs/people_1/instance_images', '--output_dir=./work_dirs/people_1/output_dir', '--instance_prompt=a photo of cartoon man', '--resolution=768', '--train_batch_size=1', '--gradient_accumulation_steps=1', '--checkpointing_steps=100', '--learning_rate=1e-4', '--report_to=wandb', '--lr_scheduler=constant', '--lr_warmup_steps=0', '--max_train_steps=500', '--validation_prompt=A photo of cartoon man in a house', '--validation_epochs=50', '--seed=0'), 'state': 'running', 'program': 'train_dreambooth_lora.py', 'codePath': 'examples/dreambooth/train_dreambooth_lora.py', 'git': {'remote': 'https://github.com/huggingface/diffusers', 'commit': 'a7f25b4a881c0835980e2a3db5fe09bfc4ab2dc0'}, 'email': 'jinyujie@pegasus.tech', 'root': '/home/jinyujie/spirit/diffusers', 'host': 'k8s-prod-shanghai-bm02', 'username': 'jinyujie', 'executable': '/home/jinyujie/anaconda3/envs/visgpt/bin/python', 'cpu_count': 40, 'cpu_count_logical': 80, 'cpu_freq': {'current': 1163.12805, 'min': 800.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 2300.0, 'min': 800.0, 'max': 3400.0}, {'current': 2074.806, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 900.0, 'min': 800.0, 'max': 3400.0}, {'current': 1638.314, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 1000.0, 'min': 800.0, 'max': 3400.0}, {'current': 900.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 900.0, 'min': 800.0, 'max': 3400.0}, {'current': 3070.714, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 2300.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 1300.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 900.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 900.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 3114.096, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 900.0, 'min': 800.0, 'max': 3400.0}, {'current': 900.0, 'min': 800.0, 'max': 3400.0}, {'current': 900.0, 'min': 800.0, 'max': 3400.0}, {'current': 900.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 2725.873, 'min': 800.0, 'max': 3400.0}, {'current': 1100.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 900.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 900.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 900.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 900.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 2103.03, 'min': 800.0, 'max': 3400.0}, {'current': 1000.0, 'min': 800.0, 'max': 3400.0}, {'current': 900.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}], 'disk': {'total': 280.5496139526367, 'used': 196.14065551757812}, 'gpu': 'NVIDIA A100-PCIE-40GB', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42505273344}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42505273344}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42505273344}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42505273344}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42505273344}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42505273344}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42505273344}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42505273344}], 'memory': {'total': 755.5388488769531}}
+2023-05-09 13:39:17,998 INFO    HandlerThread:1819753 [system_monitor.py:probe():211] Finished collecting system info
+2023-05-09 13:39:17,998 INFO    HandlerThread:1819753 [system_monitor.py:probe():214] Publishing system info
+2023-05-09 13:39:17,998 DEBUG   HandlerThread:1819753 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-05-09 13:39:17,999 DEBUG   HandlerThread:1819753 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-09 13:39:17,999 DEBUG   HandlerThread:1819753 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-05-09 13:39:18,355 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_created():278] file/dir created: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:39:18,356 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_created():278] file/dir created: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/conda-environment.yaml
+2023-05-09 13:39:18,356 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_created():278] file/dir created: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/requirements.txt
+2023-05-09 13:39:22,012 DEBUG   HandlerThread:1819753 [system_info.py:_save_conda():86] Saving conda packages done
+2023-05-09 13:39:22,014 INFO    HandlerThread:1819753 [system_monitor.py:probe():216] Finished publishing system info
+2023-05-09 13:39:22,026 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: status_report
+2023-05-09 13:39:22,027 DEBUG   SenderThread:1819753 [sender.py:send():375] send: files
+2023-05-09 13:39:22,027 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-05-09 13:39:22,040 DEBUG   SenderThread:1819753 [sender.py:send():375] send: telemetry
+2023-05-09 13:39:22,040 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-09 13:39:22,041 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: stop_status
+2023-05-09 13:39:22,357 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/conda-environment.yaml
+2023-05-09 13:39:22,358 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_created():278] file/dir created: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-metadata.json
+2023-05-09 13:39:22,394 DEBUG   SenderThread:1819753 [sender.py:send():375] send: config
+2023-05-09 13:39:22,929 INFO    wandb-upload_0:1819753 [upload_job.py:push():137] Uploaded file /tmp/tmpowmyj1y2wandb/cihpkqfj-wandb-metadata.json
+2023-05-09 13:39:23,358 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_created():278] file/dir created: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/output.log
+2023-05-09 13:39:24,581 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:39:25,164 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:39:25,166 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:39:25,166 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:39:25,167 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:39:25,359 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:39:25,359 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/output.log
+2023-05-09 13:39:25,742 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:39:25,744 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:39:25,745 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:39:25,745 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:39:26,304 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:39:26,306 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:39:26,307 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:39:26,308 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:39:26,359 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:39:27,360 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/output.log
+2023-05-09 13:39:27,391 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: status_report
+2023-05-09 13:39:29,361 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/output.log
+2023-05-09 13:39:32,392 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: status_report
+2023-05-09 13:39:37,036 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-09 13:39:37,037 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: stop_status
+2023-05-09 13:39:38,273 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: status_report
+2023-05-09 13:39:43,274 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: status_report
+2023-05-09 13:39:48,281 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: status_report
+2023-05-09 13:39:49,371 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/config.yaml
+2023-05-09 13:39:52,039 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-09 13:39:52,041 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: stop_status
+2023-05-09 13:39:54,284 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: status_report
+2023-05-09 13:39:58,337 DEBUG   SenderThread:1819753 [sender.py:send():375] send: files
+2023-05-09 13:39:58,339 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file media/images/validation_4_784f89e24151e9ca5149.png with policy now
+2023-05-09 13:39:58,341 DEBUG   SenderThread:1819753 [sender.py:send():375] send: files
+2023-05-09 13:39:58,342 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file media/images/validation_4_79371aace4aff14c54f9.png with policy now
+2023-05-09 13:39:58,342 DEBUG   SenderThread:1819753 [sender.py:send():375] send: files
+2023-05-09 13:39:58,343 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file media/images/validation_4_dd8c8d794b51c9f9a8f6.png with policy now
+2023-05-09 13:39:58,353 DEBUG   SenderThread:1819753 [sender.py:send():375] send: files
+2023-05-09 13:39:58,353 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file media/images/validation_4_5782075db663569a82b6.png with policy now
+2023-05-09 13:39:58,378 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_created():278] file/dir created: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/media/images/validation_4_79371aace4aff14c54f9.png
+2023-05-09 13:39:58,379 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_created():278] file/dir created: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/media/images/validation_4_5782075db663569a82b6.png
+2023-05-09 13:39:58,379 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_created():278] file/dir created: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/media/images/validation_4_dd8c8d794b51c9f9a8f6.png
+2023-05-09 13:39:58,380 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_created():278] file/dir created: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/media/images/validation_4_784f89e24151e9ca5149.png
+2023-05-09 13:39:58,380 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_created():278] file/dir created: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/media
+2023-05-09 13:39:58,380 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_created():278] file/dir created: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/media/images
+2023-05-09 13:39:58,445 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:39:58,447 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:39:58,448 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:39:58,452 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:39:59,379 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:39:59,389 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:39:59,391 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: status_report
+2023-05-09 13:39:59,741 INFO    wandb-upload_1:1819753 [upload_job.py:push():137] Uploaded file /tmp/tmpowmyj1y2wandb/knzc3lnb-media/images/validation_4_79371aace4aff14c54f9.png
+2023-05-09 13:39:59,969 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:39:59,971 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:39:59,971 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:39:59,972 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:39:59,988 INFO    wandb-upload_2:1819753 [upload_job.py:push():137] Uploaded file /tmp/tmpowmyj1y2wandb/6onivwaj-media/images/validation_4_dd8c8d794b51c9f9a8f6.png
+2023-05-09 13:40:00,290 INFO    wandb-upload_0:1819753 [upload_job.py:push():137] Uploaded file /tmp/tmpowmyj1y2wandb/7i2hxq8n-media/images/validation_4_784f89e24151e9ca5149.png
+2023-05-09 13:40:00,364 INFO    wandb-upload_3:1819753 [upload_job.py:push():137] Uploaded file /tmp/tmpowmyj1y2wandb/tf9027wn-media/images/validation_4_5782075db663569a82b6.png
+2023-05-09 13:40:00,380 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:40:00,547 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:00,549 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:00,550 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:00,550 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:00,788 INFO    wandb-upload_1:1819753 [upload_job.py:push():137] Uploaded file /tmp/tmpowmyj1y2wandb/y3r9jn9e-media/images/validation_4_79371aace4aff14c54f9.png
+2023-05-09 13:40:01,109 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:01,111 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:01,111 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:01,112 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:01,380 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:40:01,381 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/output.log
+2023-05-09 13:40:01,550 INFO    wandb-upload_2:1819753 [upload_job.py:push():137] Uploaded file /tmp/tmpowmyj1y2wandb/5vmcvye5-media/images/validation_4_dd8c8d794b51c9f9a8f6.png
+2023-05-09 13:40:01,707 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:01,708 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:01,708 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:01,709 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:01,730 INFO    wandb-upload_0:1819753 [upload_job.py:push():137] Uploaded file /tmp/tmpowmyj1y2wandb/a0l1cave-media/images/validation_4_784f89e24151e9ca5149.png
+2023-05-09 13:40:02,107 INFO    wandb-upload_3:1819753 [upload_job.py:push():137] Uploaded file /tmp/tmpowmyj1y2wandb/8lof4azn-media/images/validation_4_5782075db663569a82b6.png
+2023-05-09 13:40:02,280 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:02,282 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:02,282 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:02,283 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:02,381 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:40:02,859 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:02,862 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:02,862 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:02,863 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:03,382 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:40:03,382 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/output.log
+2023-05-09 13:40:03,423 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:03,425 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:03,426 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:03,426 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:04,020 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:04,023 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:04,023 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:04,024 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:04,382 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:40:04,606 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:04,607 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: status_report
+2023-05-09 13:40:04,607 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:04,608 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:04,609 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:05,194 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:05,196 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:05,196 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:05,197 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:05,383 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:40:05,383 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/output.log
+2023-05-09 13:40:05,766 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:05,768 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:05,769 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:05,769 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:06,379 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:06,381 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:06,381 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:06,382 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:06,383 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:40:06,963 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:06,965 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:06,966 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:06,967 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:07,037 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-09 13:40:07,037 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: stop_status
+2023-05-09 13:40:07,384 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:40:07,385 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/output.log
+2023-05-09 13:40:07,556 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:07,558 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:07,559 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:07,560 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:08,120 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:08,122 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:08,123 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:08,123 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:08,385 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:40:08,714 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:08,716 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:08,716 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:08,717 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:09,296 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:09,298 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:09,299 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:09,299 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:09,385 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:40:09,386 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/output.log
+2023-05-09 13:40:09,873 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:09,875 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: status_report
+2023-05-09 13:40:09,875 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:09,876 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:09,877 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:10,386 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:40:10,434 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:10,437 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:10,437 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:10,438 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:11,034 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 13:40:11,037 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:11,037 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:11,038 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:11,387 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:40:11,388 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/output.log
+2023-05-09 13:40:11,935 DEBUG   SenderThread:1819753 [sender.py:send():375] send: exit
+2023-05-09 13:40:11,935 INFO    SenderThread:1819753 [sender.py:send_exit():598] handling exit code: 255
+2023-05-09 13:40:11,935 INFO    SenderThread:1819753 [sender.py:send_exit():600] handling runtime: 54
+2023-05-09 13:40:11,936 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:11,937 INFO    SenderThread:1819753 [sender.py:send_exit():606] send defer
+2023-05-09 13:40:11,937 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 13:40:11,938 INFO    HandlerThread:1819753 [handler.py:handle_request_defer():170] handle defer: 0
+2023-05-09 13:40:11,938 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: defer
+2023-05-09 13:40:11,938 INFO    SenderThread:1819753 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-05-09 13:40:11,938 INFO    SenderThread:1819753 [sender.py:transition_state():626] send defer: 1
+2023-05-09 13:40:11,939 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 13:40:11,939 INFO    HandlerThread:1819753 [handler.py:handle_request_defer():170] handle defer: 1
+2023-05-09 13:40:11,939 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: defer
+2023-05-09 13:40:11,939 INFO    SenderThread:1819753 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-05-09 13:40:11,940 INFO    SenderThread:1819753 [sender.py:transition_state():626] send defer: 2
+2023-05-09 13:40:11,940 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 13:40:11,940 INFO    HandlerThread:1819753 [handler.py:handle_request_defer():170] handle defer: 2
+2023-05-09 13:40:11,940 INFO    HandlerThread:1819753 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-09 13:40:11,940 DEBUG   SystemMonitor:1819753 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-09 13:40:11,941 DEBUG   SystemMonitor:1819753 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-09 13:40:11,942 INFO    HandlerThread:1819753 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-09 13:40:11,942 DEBUG   SystemMonitor:1819753 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-09 13:40:11,942 INFO    HandlerThread:1819753 [interfaces.py:finish():202] Joined disk monitor
+2023-05-09 13:40:12,388 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:40:13,388 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/output.log
+2023-05-09 13:40:13,450 INFO    HandlerThread:1819753 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-09 13:40:13,450 INFO    HandlerThread:1819753 [interfaces.py:finish():202] Joined memory monitor
+2023-05-09 13:40:13,450 INFO    HandlerThread:1819753 [interfaces.py:finish():202] Joined network monitor
+2023-05-09 13:40:13,451 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-09 13:40:13,452 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: defer
+2023-05-09 13:40:13,452 INFO    SenderThread:1819753 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-05-09 13:40:13,452 INFO    SenderThread:1819753 [sender.py:transition_state():626] send defer: 3
+2023-05-09 13:40:13,453 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 13:40:13,453 INFO    HandlerThread:1819753 [handler.py:handle_request_defer():170] handle defer: 3
+2023-05-09 13:40:13,453 DEBUG   SenderThread:1819753 [sender.py:send():375] send: stats
+2023-05-09 13:40:13,456 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: poll_exit
+2023-05-09 13:40:13,457 DEBUG   SenderThread:1819753 [sender.py:send():375] send: history
+2023-05-09 13:40:13,457 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 13:40:13,458 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:13,458 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: defer
+2023-05-09 13:40:13,458 INFO    SenderThread:1819753 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-05-09 13:40:13,458 INFO    SenderThread:1819753 [sender.py:transition_state():626] send defer: 4
+2023-05-09 13:40:13,459 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 13:40:13,459 INFO    HandlerThread:1819753 [handler.py:handle_request_defer():170] handle defer: 4
+2023-05-09 13:40:13,459 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: defer
+2023-05-09 13:40:13,459 INFO    SenderThread:1819753 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-05-09 13:40:13,459 INFO    SenderThread:1819753 [sender.py:transition_state():626] send defer: 5
+2023-05-09 13:40:13,460 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 13:40:13,460 INFO    HandlerThread:1819753 [handler.py:handle_request_defer():170] handle defer: 5
+2023-05-09 13:40:13,460 DEBUG   SenderThread:1819753 [sender.py:send():375] send: summary
+2023-05-09 13:40:13,462 INFO    SenderThread:1819753 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 13:40:13,462 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: defer
+2023-05-09 13:40:13,462 INFO    SenderThread:1819753 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-05-09 13:40:13,462 INFO    SenderThread:1819753 [sender.py:transition_state():626] send defer: 6
+2023-05-09 13:40:13,463 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 13:40:13,463 INFO    HandlerThread:1819753 [handler.py:handle_request_defer():170] handle defer: 6
+2023-05-09 13:40:13,463 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: defer
+2023-05-09 13:40:13,463 INFO    SenderThread:1819753 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-05-09 13:40:13,463 INFO    SenderThread:1819753 [sender.py:transition_state():626] send defer: 7
+2023-05-09 13:40:13,464 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: status_report
+2023-05-09 13:40:13,464 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 13:40:13,464 INFO    HandlerThread:1819753 [handler.py:handle_request_defer():170] handle defer: 7
+2023-05-09 13:40:13,465 DEBUG   SenderThread:1819753 [sender.py:send_request():402] send_request: defer
+2023-05-09 13:40:13,465 INFO    SenderThread:1819753 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-05-09 13:40:13,639 WARNING StreamThr :1819753 [internal.py:is_dead():414] Internal process exiting, parent pid 1819138 disappeared
+2023-05-09 13:40:13,639 ERROR   StreamThr :1819753 [internal.py:wandb_internal():152] Internal process shutdown.
+2023-05-09 13:40:13,919 DEBUG   HandlerThread:1819753 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-09 13:40:13,919 INFO    HandlerThread:1819753 [handler.py:finish():845] shutting down handler
+2023-05-09 13:40:13,920 INFO    WriterThread:1819753 [datastore.py:close():298] close: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/run-ppoajg7d.wandb
+2023-05-09 13:40:14,389 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:40:14,527 INFO    SenderThread:1819753 [sender.py:transition_state():626] send defer: 8
+2023-05-09 13:40:14,527 INFO    SenderThread:1819753 [sender.py:finish():1550] shutting down sender
+2023-05-09 13:40:14,527 INFO    SenderThread:1819753 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-05-09 13:40:15,390 INFO    Thread-12 :1819753 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/output.log
+2023-05-09 13:40:15,391 INFO    SenderThread:1819753 [dir_watcher.py:finish():395] scan: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files
+2023-05-09 13:40:15,392 INFO    SenderThread:1819753 [dir_watcher.py:finish():409] scan save: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/config.yaml config.yaml
+2023-05-09 13:40:15,392 INFO    SenderThread:1819753 [dir_watcher.py:finish():409] scan save: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json wandb-summary.json
+2023-05-09 13:40:15,392 INFO    SenderThread:1819753 [dir_watcher.py:finish():409] scan save: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/conda-environment.yaml conda-environment.yaml
+2023-05-09 13:40:15,393 INFO    SenderThread:1819753 [dir_watcher.py:finish():409] scan save: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-metadata.json wandb-metadata.json
+2023-05-09 13:40:15,393 INFO    SenderThread:1819753 [dir_watcher.py:finish():409] scan save: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/requirements.txt requirements.txt
+2023-05-09 13:40:15,393 INFO    SenderThread:1819753 [dir_watcher.py:finish():409] scan save: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/output.log output.log
+2023-05-09 13:40:15,393 INFO    SenderThread:1819753 [dir_watcher.py:finish():409] scan save: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/media/images/validation_4_784f89e24151e9ca5149.png media/images/validation_4_784f89e24151e9ca5149.png
+2023-05-09 13:40:15,394 INFO    SenderThread:1819753 [dir_watcher.py:finish():409] scan save: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/media/images/validation_4_79371aace4aff14c54f9.png media/images/validation_4_79371aace4aff14c54f9.png
+2023-05-09 13:40:15,394 INFO    SenderThread:1819753 [dir_watcher.py:finish():409] scan save: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/media/images/validation_4_5782075db663569a82b6.png media/images/validation_4_5782075db663569a82b6.png
+2023-05-09 13:40:15,394 INFO    SenderThread:1819753 [dir_watcher.py:finish():409] scan save: /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/media/images/validation_4_dd8c8d794b51c9f9a8f6.png media/images/validation_4_dd8c8d794b51c9f9a8f6.png
+2023-05-09 13:40:15,395 INFO    SenderThread:1819753 [file_pusher.py:finish():168] shutting down file pusher
+2023-05-09 13:40:15,395 INFO    SenderThread:1819753 [file_pusher.py:join():173] waiting for file pusher
+2023-05-09 13:40:16,000 INFO    wandb-upload_0:1819753 [upload_job.py:push():137] Uploaded file /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/conda-environment.yaml
+2023-05-09 13:40:16,002 INFO    wandb-upload_3:1819753 [upload_job.py:push():137] Uploaded file /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/requirements.txt
+2023-05-09 13:40:16,062 INFO    wandb-upload_2:1819753 [upload_job.py:push():137] Uploaded file /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/output.log
+2023-05-09 13:40:16,147 INFO    wandb-upload_4:1819753 [upload_job.py:push():137] Uploaded file /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/wandb-summary.json
+2023-05-09 13:40:16,298 INFO    wandb-upload_1:1819753 [upload_job.py:push():137] Uploaded file /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230509_133916-ppoajg7d/files/config.yaml

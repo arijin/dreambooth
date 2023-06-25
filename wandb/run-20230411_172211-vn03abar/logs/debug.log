@@ -1,0 +1,33 @@
+2023-04-11 17:22:11,801 INFO    MainThread:919210 [wandb_setup.py:_flush():76] Configure stats pid to 919210
+2023-04-11 17:22:11,802 INFO    MainThread:919210 [wandb_setup.py:_flush():76] Loading settings from /home/jinyujie/.config/wandb/settings
+2023-04-11 17:22:11,802 INFO    MainThread:919210 [wandb_setup.py:_flush():76] Loading settings from /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/settings
+2023-04-11 17:22:11,802 INFO    MainThread:919210 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-04-11 17:22:11,802 INFO    MainThread:919210 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-04-11 17:22:11,802 INFO    MainThread:919210 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'examples/dreambooth/train_dreambooth_lora.py', 'program': 'train_dreambooth_lora.py'}
+2023-04-11 17:22:11,802 INFO    MainThread:919210 [wandb_init.py:_log_setup():507] Logging user logs to /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230411_172211-vn03abar/logs/debug.log
+2023-04-11 17:22:11,802 INFO    MainThread:919210 [wandb_init.py:_log_setup():508] Logging internal logs to /home/jinyujie/spirit/diffusers/examples/dreambooth/wandb/run-20230411_172211-vn03abar/logs/debug-internal.log
+2023-04-11 17:22:11,803 INFO    MainThread:919210 [wandb_init.py:init():547] calling init triggers
+2023-04-11 17:22:11,803 INFO    MainThread:919210 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-04-11 17:22:11,803 INFO    MainThread:919210 [wandb_init.py:init():595] starting backend
+2023-04-11 17:22:11,803 INFO    MainThread:919210 [wandb_init.py:init():599] setting up manager
+2023-04-11 17:22:11,811 INFO    MainThread:919210 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-04-11 17:22:11,813 INFO    MainThread:919210 [wandb_init.py:init():605] backend started and connected
+2023-04-11 17:22:11,818 INFO    MainThread:919210 [wandb_init.py:init():695] updated telemetry
+2023-04-11 17:22:11,924 INFO    MainThread:919210 [wandb_init.py:init():732] communicating run to backend with 60.0 second timeout
+2023-04-11 17:22:12,654 INFO    MainThread:919210 [wandb_run.py:_on_init():2176] communicating current version
+2023-04-11 17:22:13,189 INFO    MainThread:919210 [wandb_run.py:_on_init():2185] got version response 
+2023-04-11 17:22:13,190 INFO    MainThread:919210 [wandb_init.py:init():782] starting run threads in backend
+2023-04-11 17:22:18,034 INFO    MainThread:919210 [wandb_run.py:_console_start():2157] atexit reg
+2023-04-11 17:22:18,034 INFO    MainThread:919210 [wandb_run.py:_redirect():2012] redirect: SettingsConsole.WRAP_RAW
+2023-04-11 17:22:18,034 INFO    MainThread:919210 [wandb_run.py:_redirect():2077] Wrapping output streams.
+2023-04-11 17:22:18,035 INFO    MainThread:919210 [wandb_run.py:_redirect():2102] Redirects installed.
+2023-04-11 17:22:18,035 INFO    MainThread:919210 [wandb_init.py:init():824] run started, returning control to user process
+2023-04-11 17:22:18,041 INFO    MainThread:919210 [wandb_run.py:_config_callback():1285] config_cb None None {'pretrained_model_name_or_path': '/home/jinyujie/.cache/huggingface/hub/models--stabilityai--stable-diffusion-2-1/snapshots/36a01dc742066de2e8c91e7cf0b8f6b53ef53da1', 'revision': None, 'tokenizer_name': None, 'instance_data_dir': './work_dirs/people_1/instance_images', 'class_data_dir': None, 'instance_prompt': 'a photo of cartoon man', 'class_prompt': None, 'validation_prompt': 'A photo of cartoon man in a house', 'num_validation_images': 4, 'validation_epochs': 50, 'with_prior_preservation': False, 'prior_loss_weight': 1.0, 'num_class_images': 100, 'output_dir': './work_dirs/people_1/output_dir', 'seed': 0, 'resolution': 768, 'center_crop': False, 'train_batch_size': 1, 'sample_batch_size': 4, 'num_train_epochs': 125, 'max_train_steps': 500, 'checkpointing_steps': 100, 'checkpoints_total_limit': None, 'resume_from_checkpoint': None, 'gradient_accumulation_steps': 1, 'gradient_checkpointing': False, 'learning_rate': 0.0001, 'scale_lr': False, 'lr_scheduler': 'constant', 'lr_warmup_steps': 0, 'lr_num_cycles': 1, 'lr_power': 1.0, 'dataloader_num_workers': 0, 'use_8bit_adam': False, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_weight_decay': 0.01, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'push_to_hub': False, 'hub_token': None, 'hub_model_id': None, 'logging_dir': 'logs', 'allow_tf32': False, 'report_to': 'wandb', 'mixed_precision': None, 'prior_generation_precision': None, 'local_rank': -1, 'enable_xformers_memory_efficient_attention': False}
+2023-04-11 17:29:35,405 INFO    MainThread:919210 [wandb_run.py:_finish():1892] finishing run arijin097/dreambooth-lora/vn03abar
+2023-04-11 17:29:35,405 INFO    MainThread:919210 [wandb_run.py:_atexit_cleanup():2126] got exitcode: 0
+2023-04-11 17:29:35,405 INFO    MainThread:919210 [wandb_run.py:_restore():2109] restore
+2023-04-11 17:29:35,406 INFO    MainThread:919210 [wandb_run.py:_restore():2115] restore done
+2023-04-11 17:29:49,721 INFO    MainThread:919210 [wandb_run.py:_footer_history_summary_info():3476] rendering history
+2023-04-11 17:29:49,721 INFO    MainThread:919210 [wandb_run.py:_footer_history_summary_info():3508] rendering summary
+2023-04-11 17:29:49,729 INFO    MainThread:919210 [wandb_run.py:_footer_sync_info():3434] logging synced files
